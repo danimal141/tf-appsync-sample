@@ -5,8 +5,8 @@
     "id" : { "S": "$util.autoId()" }
   },
   "attributeValues": {
-    "name": { "S": "${context.arguments.name}" },
-    "description": { "S": "${context.arguments.description}" },
-    "priority": { "N": "${context.arguments.priority}" },
+    "name": { "S": "${ctx.args.name}" },
+    "description": { "S": "${ctx.args.description}" },
+    "priority": { "N": "${ctx.args.priority}" },
   }
 }
