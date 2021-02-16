@@ -4,7 +4,7 @@ locals {
   datasource_name      = "datasource_${local.project_name_for_uri}"
 
   dynamodb = {
-    table_name = "dynamo-${local.project_name}"
+    table_name = "${local.project_name}-todos"
   }
 
   appsync = {
