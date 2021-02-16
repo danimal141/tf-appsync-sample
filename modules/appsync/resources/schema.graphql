@@ -10,7 +10,7 @@ type Query {
 }
 
 type Mutation {
-  addTodo(id: ID!, name: String!, description: String, priority: Int): Todo
+  addTodo(name: String!, description: String, priority: Int): Todo
 }
 
 # type Subscription {
