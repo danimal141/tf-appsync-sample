@@ -1,0 +1,12 @@
+{
+  "version" : "2017-02-28",
+  "operation" : "PutItem",
+  "key" : {
+    "id" : { "S": "$util.autoId()" }
+  },
+  "attributeValues": {
+    "name": { "S": "${context.arguments.name}" },
+    "description": { "S": "${context.arguments.description}" },
+    "priority": { "N": "${context.arguments.priority}" },
+  }
+}
